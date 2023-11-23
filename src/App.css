@@ -26,9 +26,20 @@ button{background-color: transparent;}
   padding: 0 1rem;
 }
 
+.app__header {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin: 0 0 1.5rem;
+}
+
 .app__title {
   font-size: 1.5rem;
-  margin: 0 0 1.5rem;
+}
+
+.app__btn-update {
+  width: 2rem;
+  height: 2rem;
 }
 
 .form {

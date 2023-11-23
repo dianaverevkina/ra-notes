@@ -59,6 +59,13 @@ export const NotesWidget = () => {
 
   return (
     <>
+      <header className="app__header">
+        <h1 className='app__title'>My notes</h1>
+        <button className="app__btn-update" type="button" onClick={() => getNotes()}>
+          <img src="/images/refresh.svg" alt="" />
+        </button>
+      </header>
+      
       <NotesForm note={note} onChange={handleChange} onSubmit={handleSubmit} />
       <NotesContainer notes={notes} onDelete={deleteNote}/>
     </>
